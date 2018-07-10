@@ -1,36 +1,20 @@
-$fontDefault: 'OpenSans', sans-serif
-$fontCustom: 'FreeSet'
+$fontDefault: 'Roboto', Arial, sans-serif
 $text: #333
-$cb: #005dbd
-
-
 
 @import 'fonts'
 @import 'libs'
-// @import 'elements'
-
-::placeholder
-	color: #666
-
-::selection
-	background-color: #000
-	color: #fff
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
+	background-color: #fff
 	font-family: $fontDefault
+	-webkit-font-smoothing: subpixel-antialiased !important
+	-moz-osx-font-smoothing: grayscale !important
+	-osx-font-smoothing: grayscale !important
 	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+	-webkit-backface-visibility: hidden
+	-moz-backface-visibility:    hidden
+	-ms-backface-visibility:     hidden
+	backface-visibility: 		 hidden
 
 .img-responsive
 	display: block
@@ -47,4 +31,4 @@ b, strong
 
 
 
-@import "media" // Always at the end
+@import "media"
